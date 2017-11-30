@@ -1,0 +1,13 @@
+# Created by .ignore support plugin (hsz.mobi)
+.idea
+bitrix
+tmp*
+
+# Composer
+vendor
+composer.phar
+/package-lock.json
+/composer.lock
+
+# Node.js
+node_modules

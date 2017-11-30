@@ -1,0 +1,15 @@
+{
+  "name": "demostorecompass",
+  "version": "1.0.0",
+  "description": "Demo store for CompassPlus",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "gulp": "^3.9.1",
+    "gulp-download": "0.0.1"
+  }
+}

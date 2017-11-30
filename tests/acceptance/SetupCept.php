@@ -1,0 +1,24 @@
+<?php 
+$I = new AcceptanceTester($scenario);
+$I->wantTo('perform actions and see result');
+$I->amOnPage("index.php");
+$I->waitForElement("[value='Далее']");
+$I->click("[value='Далее']");
+$I->checkOption("#agree_license_id");
+$I->click("[value='Далее']");
+$I->fillField("#user_name", "Jhon");
+$I->fillField("#user_surname", "Doe");
+$I->fillField("#email", "test@test.com");
+$I->checkOption("#utf8_inst");
+$I->click("[value='Далее']");
+$I->wait(1);
+$I->click("[value='Далее']");
+$I->fillField("[name='__wiz_host']", "mysql");
+$I->fillField("[name='__wiz_user']", "bitrix");
+$I->fillField("[name='__wiz_database']", "bitrix");
+$I->fillField("[name='__wiz_password']", "123");
+$I->click("[value='Далее']");
+//$I->click("#download_button");
+//$I->waitForElement(".progressbar-loader");
+//$I->waitForText("Распаковка дистрибутива", 1000);
+$I->wait(30);
